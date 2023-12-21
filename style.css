@@ -1,0 +1,158 @@
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Updated nav bar styles */
+nav {
+    width: 100%;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    border-bottom: 2px solid #e7e7e7;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Updated styles for nav ul */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Updated styles for nav ul li */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Updated styles for nav ul li a */
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Hover effect for the navigation links */
+nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Left Menu Styles */
+.left-menu {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 200px;
+    padding: 15px;
+    background-color: #f2f2f2;
+}
+
+/* Right Menu Styles */
+.right-menu {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 200px;
+    padding: 15px;
+    background-color: #f2f2f2;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e7e7e7;
+}
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: block; /* Stacking nav items vertically */
+    }
+
+    nav ul li {
+        display: block; /* List items take full width */
+        text-align: center;
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        display: block; /* Full width links */
+        margin-bottom: 10px; /* Space between links */
+    }
+
+    .left-menu, .right-menu {
+        width: 100%; /* Full width for smaller screens */
+        position: static; /* Normal flow */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .main-content {
+        padding-left: 10px; /* Reduced padding */
+        padding-right: 10px;
+    }
+
+    /* Adjust font sizes if necessary for readability */
+    .readme-container h1, .readme-container h2 {
+        font-size: 20px; /* Example size, adjust as needed */
+    }
+
+    .readme-container p {
+        font-size: 16px; /* Example size, adjust as needed */
+    }
+}
+
+/* Readme Container Styles */
+.readme-container {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.readme-container h1, .readme-container h2 {
+    color: #2193b0;
+}
+
+.readme-container p {
+    line-height: 1.6;
+    color: #333333;
+}
+
+.readme-container strong {
+    color: #6dd5ed;
+}
+.main-content {
+    padding-left: 220px; /* Adjust as needed, should be >= width of the left menu */
+    padding-right: 220px; /* Adjust as needed, should be >= width of the right menu */
+}
+
+@media screen and (max-width: 600px) {
+    .main-content {
+        padding-left: 10px; /* Reduced padding for smaller screens */
+        padding-right: 10px; /* Reduced padding for smaller screens */
+    }
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #6dd5ed;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #2193b0;
+}
