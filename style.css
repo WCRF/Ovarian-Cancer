@@ -71,6 +71,25 @@ footer {
     padding: 20px;
     background-color: #e7e7e7;
 }
+#table-of-contents {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#table-of-contents li {
+    list-style: none; /* Removes bullet points */
+}
+
+#table-of-contents li a {
+    text-decoration: none; /* Removes underline */
+    color: #007bff; /* Sets link color */
+}
+
+#table-of-contents li a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
 
 /* Responsive Design Adjustments */
 @media screen and (max-width: 600px) {
